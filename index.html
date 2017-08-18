@@ -7,38 +7,33 @@
 </head>
 
 <body>
-  <div class="controls">
-    <label for="slider-1">&nbsp;</label>
-    <input type="radio" name="slider" id="slider-1" checked>
-    <label for="slider-2">&nbsp;</label>
-    <input type="radio" name="slider" id="slider-2">
-    <label for="slider-3">&nbsp;</label>
-    <input type="radio" name="slider" id="slider-3">
-  </div>
+  <input type="radio" name="slider" id="slider-1" checked>
+  <input type="radio" name="slider" id="slider-2">
+  <input type="radio" name="slider" id="slider-3">
   <div class="page-wrapper">
     <header class="main-header">
       <img class="logo" src="img/index-logo.svg" alt="Gllacy Shop">
       <nav class="main-navigation">
         <a href="catalog.html">Каталог</a>
         <ul>
-          <li>Новинки</li>
-          <li>Сливочное</li>
-          <li>Щербеты</li>
-          <li>Фруктовый лед</li>
-          <li>Мелорин</li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Сливочное</a></li>
+          <li><a href="#">Щербеты</a></li>
+          <li><a href="#">Фруктовый лед</a></li>
+          <li><a href="#">Мелорин</a></li>
         </ul>
         <a href="delivery-and-payment.html">Доставка и оплата</a>
         <a href="about-company.html">О компании</a>
         <div class="user-navigation">
           <div class="search">
-            <form>
+            <form action="https://echo.htmlacademy.ru" method="get">
               <label for="search">Поиск</label>
               <input type="search" name="search" id="search" placeholder="Что ищем?">
             </form>
           </div>
           <div class="login">
             <a href="#">Вход</a>
-            <form>
+            <form action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="login" placeholder="Электронная почта">
               <input type="text" name="password" placeholder="Пароль">
               <input type="submit" value="Войти">
@@ -48,8 +43,6 @@
           </div>
           <div class="basket">
             <a href="#">Пусто</a>
-            <form>
-            </form>
           </div>
         </div>
         <div class="contacts">
@@ -60,17 +53,22 @@
     </header>
     <main>
       <div class="sliders">
-        <div class="slider-1">
-          <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-          <a href="#">Давайте оба!</a>
-        </div>
-        <div class="slider-2">
-          <h1>Шоколадный пломбир и лимонный сорбет</h1>
-          <a href="#">Давайте оба!</a>
-        </div>
-        <div class="slider-3">
-          <h1>Пломбир  помадкой и клубничный щербет</h1>
-          <a href="#">Давайте оба!</a>
+        <div class="controls">
+          <label for="slider-1">&nbsp;</label>
+          <label for="slider-2">&nbsp;</label>
+          <label for="slider-3">&nbsp;</label>
+          <div class="slider-1">
+            <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+            <a href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-2">
+            <h1>Шоколадный пломбир и лимонный сорбет</h1>
+            <a href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-3">
+            <h1>Пломбир  помадкой и клубничный щербет</h1>
+            <a href="#">Давайте оба!</a>
+          </div>
         </div>
       </div>
       <div class="for-free">
@@ -126,7 +124,7 @@
           <p>10 способов сервировки фруктовых щербетов к столу</p>
         </article>
         <section class="subscription">
-          <form>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
             <input type="email" name="email" class="subscription-email" placeholder="Электронная почта">
             <button type="submit" class="subscription-send">Отправить</button>
@@ -165,8 +163,8 @@
       </div>
     </footer>
     <div class="popup">
-      <form>
-        <input type="submit" name="close" value="Закрыть">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="button" name="close">Закрыть</button>
         <fieldset>
           <legend>Мы обязательно вам ответим!</legend>
           <input type="text" name="name" placeholder="Как вас зовут?">
