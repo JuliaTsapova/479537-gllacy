@@ -31,7 +31,7 @@ body {
   display: none;
 }
 
-.slider-2, .slider-3, .catalog-list, .visually-hidden, .search input, .modal, .choice-sorting, .basket-table {
+.slider-2, .slider-3, .catalog-list, .visually-hidden, .search input, .modal, .basket-table {
   display: none;
 }
 
@@ -344,11 +344,8 @@ body {
 }
 
 .breadcrumbs {
-  position: absolute;
-  top: 75px;
-  left: 27px;
+  margin-right: auto;
 }
-
 
 .header-wrapper {
   display: flex;
@@ -365,7 +362,7 @@ body {
 .user-navigation {
   display: flex;
   flex-basis: 265px;
-  margin-left: auto;
+  margin-left: 320px;
 }
 
 .main-wrapper {
@@ -407,7 +404,6 @@ body {
   background-image: url("../img/wafer-bg.jpg");
   background-size: cover;
 }
-
 
 .about-us .features {
   display: flex;
@@ -483,36 +479,47 @@ body {
   display: none;
 }
 
+
 /*-------------------------------*/
+
 .choice {
   margin-bottom: 10px;
 }
+
 .choice form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 858px;
 }
+
 .choice fieldset {
   min-height: 70px;
 }
+
 .choice fieldset:nth-child(1) {
   flex-basis: 187px;
 }
+
 .choice fieldset:nth-child(2) {
   flex-basis: 217px;
 }
+
 .choice fieldset:nth-child(3) {
   flex-basis: 414px;
 }
+
 .choice fieldset:nth-child(4) {
   flex-basis: 697px;
 }
+
 .choice button {
   flex-basis: 140px;
 }
 
+
 /*-------------------------------*/
+
 .pages-navigation {
   display: flex;
   width: 205px;
