@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <title>HTML Academy: Глейси</title>
 </head>
@@ -74,45 +75,48 @@
             </div>
           </div>
 
-
           <div class="basket">
-            <a href="#" class="basket-button user-menu-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                              <g class="svg-cart" fill="#fff">
-                                <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"></path>
-                                <circle cx="6.984" cy="18" r="2"></circle>
-                                <circle cx="15.984" cy="18" r="2"></circle>
-                              </g>
-                            </svg>
-              <span class="user-menu-title">2 товара</span>
-            </a>
-            <div class="basket-form">
-            <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
-              <table class="basket-table">
-                <tr>
-                  <td><button type="submit" class="table-button visually-hidden" name="delete"><span class="visually-hidden">Удалить</span></button></td>
-                  <td class="table-image"><img src="img/ice-cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td class="table-name">Пломбир с апельсиновым джемом</td>
-                  <td class="table-weight">1,5 кг</td>
-                  <td class="table-price">x 200 руб.</td>
-                  <td class="table-cost">300 руб.</td>
-                </tr>
-                <tr>
-                  <td><button type="submit" class="table-button visually-hidden" name="delete"><span class="visually-hidden">Удалить</span></button></td>
-                  <td class="table-image"><img src="img/ice-cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td class="table-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="table-weight">1,5 кг</td>
-                  <td class="table-price">x <span>300 руб.</span></td>
-                  <td class="table-cost">450 руб.</td>
-                </tr>
-                <tr>
-                  <td colspan="6"><span class="backet-total"> Итого: 750 руб.</span></td>
-                </tr>
-              </table>
-              <button type="submit" class="basket-button" name="checkout">Оформить заказ</button>
-            </form>
+              <a href="#" class="basket-button user-menu-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+                  <span class="user-menu-title">2 товара</span>
+              </a>
+              <div class="basket-form">
+                  <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
+                      <table class="basket-table">
+                          <tr>
+                            <td class="column0">
+                              <span></span>
+                            </td>
+                              <td class="column1">
+                                <img src="img/ice-cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                              </td>
+                              <td class="column2">Пломбир с апельсиновым джемом</td>
+                              <td class="column3">1,5 кг x 200 руб.</td>
+                              <td class="column4">300 руб.</td>
+                          </tr>
+                          <tr>
+                            <td class="column0">
+                              <span></span>
+                            </td>
+                              <td class="column1">
+                                <img src="img/ice-cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                              </td>
+                              <td class="column2">Клубничный пломбир с присыпкой из белого шоколада</td>
+                              <td class="column3">1,5 кг x <span>300 руб.</span></td>
+                              <td class="column4">450 руб.</td>
+                          </tr>
+                          <tr>
+                              <td colspan="5" class="column-last">
+                                <div></div>
+                                <span class="backet-total"> Итого: 750 руб.</span>
+                              </td>
+                          </tr>
+                      </table>
+                      <button type="submit" class="basket-button-checkout" name="checkout">Оформить заказ</button>
+                  </form>
+              </div>
           </div>
-          </div>
+
         </div>
         <div class="breadcrumbs">
           <a href="index.html">Главная</a>
