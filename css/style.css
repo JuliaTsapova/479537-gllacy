@@ -455,7 +455,7 @@ legend[class^="legend-choice"] {
 }
 
 .catalog-list-link:not(:first-child):hover {
-  background-color #ccc
+  background-color: #ccc;
 }
 
 .catalog-list-link {
