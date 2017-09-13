@@ -1398,12 +1398,6 @@ legend[class^="legend-choice"] {
   display: block;
 }
 
-.footer-menu {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
@@ -1874,11 +1868,14 @@ legend[class^="legend-choice"] {
 
 .footer-menu {
   position: relative;
-  width: 326px;
+  width: 330px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 23px;
   line-height: 22px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .footer-menu a {
