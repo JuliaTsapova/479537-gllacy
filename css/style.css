@@ -598,7 +598,7 @@ legend[class^="legend-choice"] {
   content: "";
   position: absolute;
   top: 90%;
-  width: 100%;
+  width: auto;
   height: 20px;
 }
 
@@ -1438,6 +1438,25 @@ legend[class^="legend-choice"] {
   font-weight: 700;
 }
 
+.basket-button-checkout {
+  display: block;
+  font-size: 17px;
+  line-height: 23px;
+  border-radius: 23px;
+  width: 170px;
+  letter-spacing: .04em;
+  -webkit-box-sizing: border-box;
+  height: 44px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Roboto", "Arial", sans-serif;
+  border: none;
+  margin-left: auto;
+  margin-top: 11px;
+  margin-right: 14px;
+}
+
 .contacts {
   position: absolute;
   top: 63px;
@@ -1855,7 +1874,7 @@ legend[class^="legend-choice"] {
 
 .footer-menu {
   position: relative;
-  flex-basis: 326px;
+  width: 326px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 23px;
