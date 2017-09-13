@@ -11,16 +11,14 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper catalog-bg">
     <header class="main-header">
       <div class="container header-wrapper">
-
-
         <nav class="main-navigation">
           <div class="logo"><a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a></div>
           <ul class="main-menu">
             <li class="main-menu-item">
-              <a class="site-navigation" href="catalog.html">Каталог</a>
+              <a class="site-navigation catalog-active" href="catalog.html">Каталог</a>
               <ul class="catalog-list">
                 <li class="catalog-list-item"><a class="catalog-list-link" href="#"><span>Новинки</span></a></li>
                 <li class="catalog-list-item"><a class="catalog-list-link" href="catalog.html">Сливочное</a></li>
@@ -33,11 +31,7 @@
             <li class="main-menu-item"><a class="site-navigation" href="about-company.html">О Компании</a> </li>
           </ul>
         </nav>
-
-
-
         <div class="user-navigation">
-
           <div class="user-search">
             <a href="#" class="search user-menu-item">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -46,12 +40,11 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="text-input" type="search" name="localsearch" id="search" required="">
+              <input class="text-input" type="search" name="localsearch" id="search" required>
               <label class="label-placeholder" for="search">Что ищем?</label>
               <button class="visually-hidden" type="submit">Искать</button>
             </form>
           </div>
-
           <div class="login">
             <a class="user-menu-item" href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19">
@@ -64,9 +57,9 @@
             </a>
             <div class="login-form">
               <form class="user-navigation-login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="email-input" type="email" name="login" id="login">
+                <input class="email-input" type="email" name="login" id="login" required>
                 <label class="email-placeholder" for="login">Электронная почта</label>
-                <input class="password-input" type="password" name="password" id="password">
+                <input class="password-input" type="password" name="password" id="password" required>
                 <label class="password-placeholder" for="password">Пароль</label>
                 <button type="submit" class="login-button" name="login-button">Войти</button>
               </form>
@@ -74,49 +67,47 @@
               <a href="#">Новая регистрация</a>
             </div>
           </div>
-
           <div class="basket">
-              <a href="#" class="basket-button user-menu-item">
+            <a href="#" class="basket-button user-menu-item catalog-basket">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
                   <span class="user-menu-title">2 товара</span>
               </a>
-              <div class="basket-form">
-                  <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
-                      <table class="basket-table">
-                          <tr>
-                            <td class="column0">
-                              <span></span>
-                            </td>
-                              <td class="column1">
-                                <img src="img/ice-cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                              </td>
-                              <td class="column2">Пломбир с апельсиновым джемом</td>
-                              <td class="column3">1,5 кг x 200 руб.</td>
-                              <td class="column4">300 руб.</td>
-                          </tr>
-                          <tr>
-                            <td class="column0">
-                              <span></span>
-                            </td>
-                              <td class="column1">
-                                <img src="img/ice-cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                              </td>
-                              <td class="column2">Клубничный пломбир с присыпкой из белого шоколада</td>
-                              <td class="column3">1,5 кг x <span>300 руб.</span></td>
-                              <td class="column4">450 руб.</td>
-                          </tr>
-                          <tr>
-                              <td colspan="5" class="column-last">
-                                <div></div>
-                                <span class="backet-total"> Итого: 750 руб.</span>
-                              </td>
-                          </tr>
-                      </table>
-                      <button type="submit" class="basket-button-checkout" name="checkout">Оформить заказ</button>
-                  </form>
-              </div>
+            <div class="basket-form">
+              <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
+                <table class="basket-table">
+                  <tr>
+                    <td class="column0">
+                      <span></span>
+                    </td>
+                    <td class="column1">
+                      <img src="img/ice-cart-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </td>
+                    <td class="column2">Пломбир с апельсиновым джемом</td>
+                    <td class="column3">1,5 кг x 200 руб.</td>
+                    <td class="column4">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="column0">
+                      <span></span>
+                    </td>
+                    <td class="column1">
+                      <img src="img/ice-cart-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </td>
+                    <td class="column2">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="column3">1,5 кг x <span>300 руб.</span></td>
+                    <td class="column4">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="column-last">
+                      <div></div>
+                      <span class="backet-total"> Итого: 750 руб.</span>
+                    </td>
+                  </tr>
+                </table>
+                <button type="submit" class="basket-button-checkout" name="checkout">Оформить заказ</button>
+              </form>
+            </div>
           </div>
-
         </div>
         <div class="breadcrumbs">
           <a href="index.html">Главная</a>
@@ -140,7 +131,6 @@
               <legend class="legend-choice">Сортировка</legend>
               <div class="choice-sorting choice-item">
                 <select name="sorting" id="sorting">
-
         <option value="popular">по популярности</option>
         <option value="cheap">сначала недорогие</option>
         <option value="expensive">сначала дорогие</option>
@@ -151,52 +141,44 @@
             <fieldset>
               <legend class="legend-choice-price">Цена: 100 руб. — 500 руб.</legend>
               <div class="choice-price range-filter choice-item">
-                <!-- <label for="price" class="visually-hidden">Цена: 100 руб. - 500 руб.</label>
-                <input class="visually-hidden" type="range" name="price" id="price" min="100" max="500"> -->
-                <!-- <section class="range-filter"> -->
                 <div class="scale">
                   <div class="bar"></div>
                   <div class="range-btn min">min</div>
                   <div class="range-btn max">max</div>
                 </div>
-                <!-- </section> -->
               </div>
             </fieldset>
             <fieldset>
               <legend class="legend-choice-fat">Жирность:</legend>
               <div class="choice-fat choice-item">
                 <input class="visually-hidden" type="radio" name="fat" id="0" value="0">
-                <label for="0">0%</label>
+                <label for="0" tabindex="0">0%</label>
                 <input class="visually-hidden" type="radio" name="fat" id="<10" value="<10" checked>
-                <label for="<10">до 10%</label>
+                <label for="<10" tabindex="0">до 10%</label>
                 <input class="visually-hidden" type="radio" name="fat" id="<30" value="<30">
-                <label for="<30">до 30%</label>
+                <label for="<30" tabindex="0">до 30%</label>
                 <input class="visually-hidden" type="radio" name="fat" id=">30" value=">30">
-                <label for=">30">выше 30%</label>
+                <label for=">30" tabindex="0">выше 30%</label>
               </div>
             </fieldset>
-
-
             <fieldset>
               <legend class="legend-choice choice-item">Наполнители:</legend>
               <div class="choice-stuffing">
                 <input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate" value="chokolate" checked>
-                <label for="chocolate">шоколадные</label>
+                <label for="chocolate" tabindex="0">шоколадные</label>
                 <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" value="sugar" checked>
-                <label for="sugar">сахарные присыпки</label>
+                <label for="sugar" tabindex="0">сахарные присыпки</label>
                 <input class="visually-hidden" type="checkbox" name="fruit" id="fruit" value="fruit">
-                <label for="fruit">фрукты</label>
+                <label for="fruit" tabindex="0">фрукты</label>
                 <input class="visually-hidden" type="checkbox" name="syrup" id="syrup" value="syrup">
-                <label for="syrup">сиропы</label>
+                <label for="syrup" tabindex="0">сиропы</label>
                 <input class="visually-hidden" type="checkbox" name="jam" id="jam" value="jam">
-                <label for="jam">джемы</label>
+                <label for="jam" tabindex="0">джемы</label>
               </div>
             </fieldset>
             <button type="submit" class="choice-button choice-item" name="choise">Применить</button>
           </form>
         </section>
-
-
         <section class="ice-creams">
           <div class="ice-cream">
             <img src="img/ice-cream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -297,17 +279,18 @@
         </section>
         <div class="pages-navigation">
           <a href="#" class="prev"><span class="visually-hidden">назад</span></a>
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
+          <a class="page-number" href="#">1</a>
+          <a class="page-number" href="#">2</a>
+          <a class="page-number" href="#">3</a>
+          <a class="page-number" href="#">4</a>
+          <a class="page-number" href="#">5</a>
           <a href="#" class="next"><span class="visually-hidden">вперед</span></a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container footer-wrapper">
+        <div class="divider"></div>
         <ul class="social">
           <li><a class="social-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <path
