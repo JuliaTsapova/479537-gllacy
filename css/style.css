@@ -448,7 +448,7 @@ legend[class^="legend-choice"] {
   vertical-align: top;
 }
 
-.main-menu-item:hover>a, .choice-button:hover  {
+.main-menu-item:hover>a, .choice-button:hover {
   background-color: #f7f6f3;
   color: #323232;
 }
@@ -517,6 +517,7 @@ legend[class^="legend-choice"] {
   border-bottom: 1px solid #d2d1cf;
 }
 
+
 /*.catalog-list-link:not(:first-child):hover {
   background-color: #cccccc;
 }*/
@@ -571,7 +572,7 @@ legend[class^="legend-choice"] {
   background-color: #d07058;
 }
 
-.catalog-active-item a{
+.catalog-active-item a {
   color: #ffffff;
 }
 
@@ -593,9 +594,8 @@ legend[class^="legend-choice"] {
   border-bottom: 1px solid rgba(255, 188, 158, .3);
 }
 
-.our-blog p:hover, .our-blog p:focus{
+.our-blog p:hover, .our-blog p:focus {
   color: #e84d37;
-
 }
 
 .user-menu-item {
@@ -705,7 +705,10 @@ legend[class^="legend-choice"] {
   display: block;
 }
 
-.search, .login>a, .basket>a {
+
+/*.search, .login>a, .basket>a {*/
+
+.user-menu-item {
   border-radius: 16px;
   background-color: rgba(255, 255, 255, .2);
   color: inherit;
@@ -716,6 +719,15 @@ legend[class^="legend-choice"] {
   padding: 0;
   vertical-align: middle;
   margin-left: 10px;
+}
+
+.user-menu-item:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.user-menu-item:hover g {
+  fill: #000000;
 }
 
 .login>a, .basket>a {
@@ -978,9 +990,9 @@ legend[class^="legend-choice"] {
   cursor: pointer;
 }
 
-.controls label:hover{
-background-color: rgba(255, 255, 255, 0.4);
-border-color: #ffffff;
+.controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #ffffff;
 }
 
 .for-free {
@@ -1074,9 +1086,10 @@ border-color: #ffffff;
   min-height: 362px;
   /*min-width: 267px;*/
   width: 267px;
+  padding-bottom: 26px;
   position: relative;
   -ms-flex-preferred-size: 267px;
-  text-align: center;
+  /*text-align: center;*/
   background-color: transparent;
 }
 
@@ -1094,7 +1107,7 @@ border-color: #ffffff;
   /*min-width: 294px;*/
   top: -8px;
   right: -14px;
-  bottom: -18px;
+  bottom: -32px;
   left: -14px;
   padding-bottom: 14px;
   display: none;
@@ -1117,11 +1130,10 @@ border-color: #ffffff;
   line-height: 45px;
   font-weight: 700;
   display: block;
-  text-align: center;
   position: relative;
-  top: -58px;
-  left: -58px;
+  margin-top: -58px;
   font-size: 45px;
+  margin-bottom: 58px;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
   z-index: 2;
@@ -1181,12 +1193,14 @@ border-color: #ffffff;
   width: 200px;
   min-height: 45px;
   z-index: 10;
+  text-align: center;
   margin-bottom: 0;
   left: 12.5%;
 }
 
 .ice-cream:hover>.view {
   display: block;
+  position: absolute;
 }
 
 .about-us {
@@ -1558,7 +1572,7 @@ border-color: #ffffff;
 }
 
 .basket-button {
-  font-size: 18px;
+  /*font-size: 18px;*/
   line-height: 24px;
   font-weight: 700;
 }
