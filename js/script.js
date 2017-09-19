@@ -54,11 +54,12 @@ var initPopup = function() {
         if (popup.classList.contains("modal-show")) {
           popup.classList.remove("modal-show");
           form.classList.remove("form-show");
-          form.classList.remove("form-error");        }
+          form.classList.remove("form-error");
+        }
       }
     });
   }
 }
 document.addEventListener("DOMContentLoaded", function(event) {
-	initPopup();
+  initPopup();
 });
