@@ -2019,7 +2019,7 @@ legend[class^="legend-choice"] {
   justify-content: space-between;
   line-height: 18px;
   align-items: flex-end;
-  min-height: 100px;
+  min-height: 97px;
   margin-left: auto;
   line-height: 18px;
 }
@@ -2096,9 +2096,10 @@ legend[class^="legend-choice"] {
   margin: auto;
   -ms-flex-preferred-size: 1146px;
   width: 1146px;
-  height: .01em;
-  border-bottom: .01rem solid #ccccc9;
+  height: 0.01em;
+  border-bottom: 0.01rem solid #ccccc9;
   bottom: 2px;
+  opacity: 0.8;
 }
 
 .social {
@@ -2153,7 +2154,7 @@ legend[class^="legend-choice"] {
 }
 
 .footer-menu a {
-  min-height: 26px;
+  min-height: 22px;
 }
 
 .footer-menu a:nth-of-type(odd) {
@@ -2164,8 +2165,13 @@ legend[class^="legend-choice"] {
   padding-left: 31px;
 }
 
+.footer-menu a:nth-of-type(3) {
+  min-height: 28px;
+}
+
 .footer-menu a:nth-of-type(4) {
   padding-left: 44px;
+  min-height: 28px;
 }
 
 .footer-menu a:first-of-type::before {
