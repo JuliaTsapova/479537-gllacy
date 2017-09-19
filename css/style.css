@@ -155,8 +155,10 @@ body>input[type="radio"] {
   background-color: rgba(255, 255, 255, .2);
   color: #fff;
   height: 36px;
-  padding-left: 16px;
-  padding-right: 32px;
+  padding-left: 15px;
+  padding-right: 29px;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -268,14 +270,16 @@ body>input[type="radio"] {
   padding-right: 15px;
 }
 
-.choice-fat label {
-  margin-top: -13px;
-  opacity: 0.8;
-  cursor: pointer;
-  position: relative;
+.choice-fat input{
+  font-family: "Roboto", "Arial", sans-serif;
+font-weight: 500;
 }
 
-.choice-fat label:hover {
+.choice-fat label {
+  margin-top: -13px;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -290,6 +294,7 @@ body>input[type="radio"] {
   top: 20px;
   left: -32px;
   position: relative;
+  opacity: 0.8;
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -299,6 +304,12 @@ body>input[type="radio"] {
   background-size: 22px 22px;
   background-image: url("../img/radio-off.svg");
 }
+
+
+.choice-fat label:hover::before {
+  opacity: 1;
+}
+
 
 .choice-fat input:checked+label::before {
   background-image: url("../img/radio-on.svg");
@@ -333,16 +344,18 @@ body>input[type="radio"] {
   padding-right: 15px;
 }
 
+.choice-stuffing input{
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+}
+
 .choice-stuffing label {
   margin-top: -12px;
   position: relative;
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
 }
 
-.choice-stuffing label:hover {
-  opacity: 1;
-}
 
 .choice-fat input:disabled~.choice-fat label, .choice-stuffing input:disabled~.choice-stuffing label {
   opacity: .4;
@@ -361,7 +374,13 @@ body>input[type="radio"] {
   background-repeat: no-repeat;
   background-size: 24px 20px;
   background-image: url("../img/checkbox-off.svg");
+  opacity: 0.8;
 }
+
+.choice-stuffing label:hover::before {
+  opacity: 1;
+}
+
 
 .choice-stuffing input:checked+label::before {
   background-image: url("../img/checkbox-on.svg");
@@ -406,6 +425,7 @@ legend[class^="legend-choice"] {
   position: relative;
   font-size: 14px;
   line-height: 16px;
+  top: -1px;
 }
 
 .legend-choice-price {
